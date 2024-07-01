@@ -1,0 +1,97 @@
+{
+    "alunos": [
+        {
+            "id": "1",
+            "nome": "Victor Loic",
+            "idade": 31,
+            "nomeCursos": ["Academia do flutter", "imersão GetX"],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": true
+                },
+                {
+                    "id": 2,
+                    "nome": "Imersão GetX",
+                    "isAluno": true
+                }
+            ],
+            "telefone": {
+                "ddd": 83,
+                "telefone": "980000000"
+            },
+            "endereco": {
+                "rua": "Rua HF",
+                "numero": 200,
+                "CEP": "58000000",
+                "cidade": {
+                    "id": 1,
+                    "nome": "João Pessoa"
+                }
+            }
+        },
+        {
+            "id": "2",
+            "nome": "Vitoria Régia",
+            "idade": 52,
+            "nomeCursos": ["Academia do flutter", "imersão GetX"],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": false
+                },
+                {
+                    "id": 2,
+                    "nome": "Imersão GetX",
+                    "isAluno": false
+                }
+            ],
+            "telefone": {
+                "ddd": 83,
+                "telefone": "980000000"
+            },
+            "endereco": {
+                "rua": "Rua HF",
+                "numero": 200,
+                "CEP": "58000000",
+                "cidade": {
+                    "id": 1,
+                    "nome": "João Pessoa"
+                }
+            }
+        },
+        {
+            "id": "3",
+            "nome": "Brogo",
+            "idade": 8,
+            "nomeCursos": ["Academia do flutter", "imersão GetX"],
+            "cursos": [
+                {
+                    "id": 1,
+                    "nome": "Academia do Flutter",
+                    "isAluno": false
+                },
+                {
+                    "id": 2,
+                    "nome": "Imersão GetX",
+                    "isAluno": true
+                }
+            ],
+            "telefone": {
+                "ddd": 83,
+                "telefone": "980000000"
+            },
+            "endereco": {
+                "rua": "Rua HF",
+                "numero": 200,
+                "CEP": "58000000",
+                "cidade": {
+                    "id": 1,
+                    "nome": "João Pessoa"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "nome": "Victor Loic",
+    "idade": 31,
+    "nomeCursos": ["Academia do flutter", "imersão GetX"],
+    "cursos": [
+        {
+            "id": 1,
+            "nome": "Academia do Flutter",
+            "isAluno": true
+        },
+        {
+            "id": 2,
+            "nome": "Imersão GetX",
+            "isAluno": true
+        }
+    ],
+    "telefone": {
+        "ddd": 83,
+        "telefone": "980000000"
+    },
+    "endereco": {
+        "rua": "Rua HF",
+        "numero": 200,
+        "CEP": "58000000"
+    }
+}
