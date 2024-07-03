@@ -30,7 +30,9 @@ class Aluno {
       'nome': nome,
       'idade': idade,
       'nomeCursos': nomeCursos,
-      'curso': curso.map((curso) => curso.toMap()).toList(),//método de conversão de lista em um mapa, array de mapas
+      'curso': curso
+          .map((curso) => curso.toMap())
+          .toList(), //método de conversão de lista em um mapa, array de mapas
       'endereco': endereco.toMap(),
       'telefone': telefone.toMap(),
     };
@@ -41,8 +43,13 @@ class Aluno {
       id: map['id'] ?? '',
       nome: map['nome'] ?? '',
       idade: map['idade'],
-      nomeCursos: map['nomeCursos'],
-      curso: List<Curso>.from(map['curso'].map<Curso>((curso) => Curso.fromMap(curso))),
+      nomeCursos: map['nomeCursos'].cast<String>(),
+      curso: map['curso'] != null
+          ? List<Curso>.from(
+              map['curso'].map<Curso>((curso) => Curso.fromMap(curso)))
+          : [],
+      // curso: List<Curso>.from(
+      //     map['curso'].map<Curso>((curso) => Curso.fromMap(curso))),
       endereco: Endereco.fromMap(map['endereco']),
       telefone: Telefone.fromMap(map['telefone']),
     );
@@ -50,6 +57,10 @@ class Aluno {
 
   String toJson() => jsonEncode(toMap());
 
-  factory Aluno.fromJson(String json) =>
-      Aluno.fromMap(jsonDecode(json));
+  factory Aluno.fromJson(String json) => Aluno.fromMap(jsonDecode(json));
+
+  @override
+  String toString() {
+    return 'Aluno(id: $id, nome: $nome, nomeCursos: $nomeCursos, endereco: $endereco, curso: $curso)';
+  }
 }

@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class Telefone {
@@ -39,4 +40,7 @@ class Telefone {
   //       ddd: json['ddd'],
   //       numero: json['numero'],
   //     );
+
+  @override
+  String toString() => 'Telefone(ddd: $ddd, numero: $numero)';
 }

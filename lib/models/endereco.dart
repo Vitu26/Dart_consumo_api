@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 import 'package:dart_api/models/cidade.dart';
@@ -36,4 +37,9 @@ class Endereco {
   String toJson() => jsonEncode(toMap());
 
   factory Endereco.fromJson(String json) => Endereco.fromJson(jsonEncode(json));
+
+  @override
+  String toString() {
+    return 'Endereco(rua: $rua, numero: $numero, cep: $cep, cidade: $cidade)';
+  }
 }

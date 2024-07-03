@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
 class Curso {
@@ -30,4 +31,7 @@ class Curso {
   String toJson() => jsonEncode(toMap());
 
   factory Curso.fromJson(String json) => Curso.fromJson(jsonDecode(json));
+
+  @override
+  String toString() => 'Curso(id: $id, nome: $nome, isAluno: $isAluno)';
 }
