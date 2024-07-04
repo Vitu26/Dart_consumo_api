@@ -1,4 +1,3 @@
-import 'package:dart_api/models/aluno.dart';
 import 'package:dart_api/repositories/alunos_repository.dart';
 
 class AlunosController {
